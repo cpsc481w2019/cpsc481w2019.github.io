@@ -1,0 +1,193 @@
+*{
+	font-family:arial;
+}
+
+body {
+	background-image: url("https://cpsc481w2019.github.io/marble.png");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+::-moz-selection {
+	color: white; 
+	background: silver;
+}
+
+::selection {
+	color: white; 
+	background: silver;
+}
+
+img{
+	max-width: 75%;
+	filter:grayscale(80%);
+}
+img{
+	opacity:0.6;
+}
+
+img:hover{
+	opacity:1;
+}
+
+a {
+	color:#AEAEAE;
+	text-decoration:none;
+}
+a:hover{
+	color: #757575;
+}
+mark{
+	background-color:#F0F0F0;
+	padding: 5px;
+	border-radius: 50%;
+  
+}
+
+h1 {
+	color:#757575;
+	font-family: arial black;
+	letter-spacing: 5px;
+}
+h2 {
+	color:#757575;
+	font-family: arial black;
+	letter-spacing: 5px;
+}
+h3 {
+	color:#757575;
+	letter-spacing: 5px;
+}
+
+h1::first-letter {
+    text-transform: uppercase;
+    font-size: 2em;
+    font-weight: bold;
+}
+h2::first-letter {
+    text-transform: uppercase;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+h3::first-letter {
+    text-transform: uppercase;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+table {
+    font-family: arial black;
+    border-collapse: collapse;
+	border: #757575;
+	color:#757575;
+}
+td, th {
+    text-align: center;
+    padding: 10px;
+}
+tr {
+	background-color: #BCBCBC;
+
+}
+th:hover{
+	color: #ffffff;
+	border: 1px solid #757575;
+}
+
+tr:first-child{
+    color:#F0F0F0
+}
+
+section li{
+  list-style-type: circle;
+  padding: 5px;
+  font-size: 14px;
+
+}
+
+
+li a {
+	display: block;
+	font-family: arial black;
+	padding: 10px 5px;
+}
+nav {
+	background-color:rgba(255,255,255,.8);
+ 
+}
+
+nav ul{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	padding-top:15px;
+	width: 150px;
+  
+}
+
+nav li a:hover {
+	background-color: #BCBCBC;
+	color: #F0F0F0;
+}
+
+/* Flexbox code from lecture 05 */
+#main {
+	min-height: 300px;
+	margin: 0px;
+	padding: 0px;
+	display: flex;
+	flex-flow: row;
+	justify-content: center;
+}
+#main > article {
+	margin: 4px;
+	padding: 30px;
+	border-radius: 15pt;
+	max-width: 770px;
+	flex: 3 1 90%;
+	order: 2;
+	background:#F0F0F0;
+	background-color:rgba(255,255,255,.9);
+}
+#main > nav {
+	margin: 4px;
+	padding: 5px;
+	border: 1px solid #fff;
+	border-radius: 15pt;
+	max-width: 150px;
+	flex: 1 6 10%;
+	order: 1;
+	opacity:0.8;
+}
+
+@media all and (max-width: 640px) {
+	#main, #page {
+		flex-direction: column;
+	}
+
+	#main > article, #main > nav {
+		order: 0;
+	}
+
+	#main > nav, header, footer {
+		min-height: 50px;
+		max-height: 50px;
+	}
+}
+header{
+    display: block;
+    /*background-image: url("https://yuena8.github.io/book.jpg");*/
+  	background-repeat: no-repeat;
+    background-size:auto;
+	background-attachment: scroll;
+	max-height:100px;
+	margin: 0 auto;
+	padding: 0px;
+	padding-top: 50px;
+	min-height: 100px;
+	border-radius: 15pt;
+	max-width: 1000px;
+	justify-content: center;
+	color:#AEAEAE;
+	font-family: arial black;
+	font-size: 2em;
+}
