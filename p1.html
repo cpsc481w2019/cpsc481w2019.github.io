@@ -8,12 +8,21 @@
 		
 	<style>
 		table, th, td {
-		border: 1px solid black;
-		border-collapse: collapse;
+			border: 1px solid black;
+			border-collapse: collapse;
 		}
 		th, td {
-		padding: 5px;
-		text-align: center;    
+			padding: 5px;
+			text-align: center;    
+		}
+		
+		ol {
+			counter-reset: section;
+			list-style-type: none;
+		}
+		li:before {
+			counter-increment: section;
+			content: counters(section, ".") ". ";
 		}
 	</style>
 		
@@ -266,7 +275,7 @@
 				
 			<h1>Task Descriptions</h1>
 				
-				<h3>Task example 1: Dave</h3>
+				<h4>Task example 1: Dave</h4>
 					
 				<ol>
 					<li>Dave is a recent university graduate who wants to adopt a pet now that he lives alone. </li>
@@ -276,7 +285,7 @@
 				</ol>
 					
 					
-				<h3>Task example 2: Lisa</h3>
+				<h4>Task example 2: Lisa</h4>
 					
 				<ol>
 					<li>Lisa is a skilled pet owner. Recently, her dog Jane has given birth to pups and she wants to put some of them up for adoption. </li>
@@ -285,7 +294,7 @@
 				</ol>
 
 					
-				<h3>Task example 3: Mike</h3>
+				<h4>Task example 3: Mike</h4>
 					
 				<ol>
 					<li>Mike is a caretaker who works at a local shelter. He takes care of a multitude of pets. Recently a new iguana named Ike has just arrived and he needs to upload Ike’s information onto to the service. </li>
@@ -293,7 +302,7 @@
 				</ol>
 
 					
-				<h3>Task example 4: Sara</h3>
+				<h4>Task example 4: Sara</h4>
 					
 				<ol>
 					<li>Sara is a young girl (not old enough to adopt on her own yet) but is curious about the process of adoption and wants to look at pictures of cute animals. </li>
@@ -302,7 +311,7 @@
 				</ol>
 					
 					
-				<h3>Task example 5: Calvin</h3>
+				<h4>Task example 5: Calvin</h4>
 					
 				<ol>
 					<li>Calvin is the administrator of a shelter and has recently gotten an influx of  adoption requests. He wants to help update information about his shelter and also review the requests he’s received. </li>
@@ -311,7 +320,7 @@
 				</ol>
 					
 					
-				<h3>Task example 6: Kyle</h3>
+				<h4>Task example 6: Kyle</h4>
 					
 				<ol>
 					<li>Kyle is an experienced pet owner. He’s adopted numerous rabbits before and wants to take care of another. </li>
