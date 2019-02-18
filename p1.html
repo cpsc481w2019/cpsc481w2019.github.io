@@ -5,7 +5,18 @@
 
 	<head>
 	<title> CPSC 481 </title>
-
+		
+	<style>
+		table, th, td {
+		border: 1px solid black;
+		border-collapse: collapse;
+		}
+		th, td {
+		padding: 5px;
+		text-align: center;    
+		}
+	</style>
+		
 	</head>
 	<body>
 		<header>CPSC 481 Winter 2019 Tutorial 03</header>
@@ -45,6 +56,46 @@
 				<p>
 				Our stakeholders include
 				</p>
+				<table style="width:100%">
+					<tr>
+						<th>Stakeholder</th>
+						<th>How much training/experience they might have</th> 
+						<th>Their background knowledge</th>
+						<th>Relationship with this service (which parts of this service they will use)</th>
+					</tr>
+					<tr>
+						<td>Basic visitor</td>
+						<td>Varies, from limited to expert</td> 
+						<td>Varies, may or may not have prior knowledge</td>
+						<td>Quick browsing, animal gallery</td>
+					</tr>
+					<tr>
+						<td>Caretakers that work in the facility</td>
+						<td rowspan="3">Have some basic experience with computer</td> 
+						<td>Proper handling of animals</td>
+						<td>Upload pets' information and check application</td>
+					</tr>
+					<tr>
+						<td rowspan="2">Adopters</td>
+						<td>May or may not have prior knowledge about adoption process</td>
+						<td rowspan="2">Primary users of the service</td>
+					</tr>
+					<tr>
+						<td>Hopefully some knowledge about owning a pet or have done their research on it</td>
+					</tr>
+					<tr>
+						<td>Management of the facility (including the webmaster)</td>
+						<td>Should be considered an expert user of the system</td>
+						<td>Is passionate about adoption</td>
+						<td>Have administrator access and permissions on the website</td>
+					</tr>
+					<tr>
+						<td>People surrending their pets</td>
+						<td>Varies, from limit to expert</td>
+						<td>Varies, may or may not have prior knowledge</td>
+						<td>Potentially looking for information on how and where to surrender their pets</td>
+					</tr>
+				</table>
 				</section>
 				
 			<h1>User Research</h1>
